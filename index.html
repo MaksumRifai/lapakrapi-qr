@@ -1,29 +1,18 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
-
 <title>LapakRapi QR Generator</title>
-
 <link rel="stylesheet" href="style.css">
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-
 </head>
 
 <body>
-
 <div class="card">
-
-<h1>LapakRapi</h1>
-
+<img src="https://raw.githubusercontent.com/MaksumRifai/lapakrapi/refs/heads/main/logo_lapak_rapi.png" class="logo">
 <h3>QR Generator</h3>
-
 <input
 id="kode"
 placeholder="Kode Pedagang">
@@ -31,24 +20,15 @@ placeholder="Kode Pedagang">
 <input
 id="nama"
 placeholder="Nama Pedagang">
-
 <button onclick="buatQR()">
-
 Generate QR
-
 </button>
-
 <div id="qrcode"></div>
-
 <p id="judul"></p>
-
 <button
 onclick="downloadQR()">
-
 Download PNG
-
 </button>
-
 </div>
 
 <script src="script.js"></script>
