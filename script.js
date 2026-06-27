@@ -18,15 +18,15 @@ document.getElementById("judul").innerHTML=
 kode+"<br>"+nama;
 }
 
-function downloadQR(){
-let img=document.querySelector("#qrcode img");
-if(!img){
+function downloadQR() {
+const canvas = document.querySelector("#qrcode canvas");
+if (!canvas) {
 alert("Generate QR terlebih dahulu");
 return;
-}
+    }
 
-let a=document.createElement("a");
-a.href=img.src;
-a.download="QR_"+document.getElementById("kode").value+".png";
-a.click();
+const link = document.createElement("a");
+link.download = "QR_" + document.getElementById("kode").value + ".png";
+link.href = canvas.toDataURL("image/png");
+link.click();
 }
